@@ -31,7 +31,7 @@ const registeruser = asyncHandler(async (req, res) => {
       "User creation failed",
       [],
       "",
-      USER_CREATION_FAILED
+      "USER_CREATION_FAILED"
     );
   }
   const token = jwt.sign(

@@ -22,7 +22,7 @@ const userSchema = new Schema({
     },
     referencetoken:[{
         type:String,
-        required:true
+        required:false
     }],
 }
 ,{
