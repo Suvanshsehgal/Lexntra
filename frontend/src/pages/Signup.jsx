@@ -21,7 +21,7 @@ function Signup() {
     setIsLoading(true);
 
     try {
-      const res = await API.post("/register", {
+      const res = await API.post("/user/register", {
         Username: username, 
         email,
         password,
