@@ -90,7 +90,7 @@ function Home() {
                   <p className="text-lg">
                     At{" "}
                     <span className="font-semibold text-[#1e463c]">
-                      LexPort
+                      Lexntra
                     </span>
                     , we believe that legal support should be simple,
                     affordable, and accessible to all — not just big firms. Our
@@ -100,11 +100,11 @@ function Home() {
                   </p>
 
                   <p className="text-lg">
-                    With LexPort, users can generate legally sound documents in
+                    With Lexntra, users can generate legally sound documents in
                     minutes, receive smart AI-powered guidance, and even consult
                     real legal professionals — all from one secure platform.
                     Whether you're a freelancer, startup founder, or someone
-                    facing a legal challenge, LexPort is here to make the
+                    facing a legal challenge, Lexntra is here to make the
                     process seamless and stress-free.
                   </p>
                 </div>

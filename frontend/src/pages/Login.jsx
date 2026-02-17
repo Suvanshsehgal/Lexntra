@@ -96,7 +96,7 @@ function Login() {
               <div className="flex items-center justify-center lg:justify-start">
                 <img
                   src={Logo}
-                  alt="LexPort Logo"
+                  alt="Lexntra Logo"
                   className="h-12 sm:h-16 md:h-18 lg:h-20 w-auto space-x-4 object-contain rounded-sm"
                 />
               </div>
@@ -106,7 +106,7 @@ function Login() {
             <h2 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
               Welcome Back
               <br />
-              to LexPort
+              to Lexntra
             </h2>
             <p className="text-lg text-white leading-relaxed">
               Securely access your legal dashboard

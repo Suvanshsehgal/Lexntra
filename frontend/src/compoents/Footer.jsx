@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="space-y-4">
           <img
             src={logo2}
-            alt="LexPort Logo"
+            alt="Lexntra Logo"
             className="h-10 w-auto object-contain"
           />
           <p className="text-sm leading-relaxed">
@@ -94,7 +94,7 @@ const Footer = () => {
 
       {/* Divider Line */}
       <div className="border-t border-white/30 mt-10 pt-6 text-sm flex flex-col md:flex-row justify-between items-center">
-        <p>© 2025 Lex-Port Legal Consulting. All rights reserved.</p>
+        <p>© 2025 Lexntra Legal Consulting. All rights reserved.</p>
         <div className="flex gap-4 mt-3 md:mt-0">
           <a href="#" className="hover:underline">
             Privacy Policy

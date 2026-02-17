@@ -35,7 +35,7 @@ const LegalLandingPage = () => {
 
             <div className="space-y-4 text-gray-600 text-lg">
               <p>
-                LexPort is your personal legal assistant — built for
+                Lexntra is your personal legal assistant — built for
                 freelancers, startups, and individuals who need fast, reliable
                 legal documents without the complexity. Choose your document,
                 get AI-guided support, and even connect with real lawyers, all

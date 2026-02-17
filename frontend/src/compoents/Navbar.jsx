@@ -19,7 +19,7 @@ function Navbar(props) {
           <NavLink to="/home" className="hover:opacity-80 transition-opacity">
             <img
               src={logo}
-              alt="Lex-Port Logo"
+              alt="Lexntra Logo"
               className="h-10 w-auto object-contain"
             />
           </NavLink>

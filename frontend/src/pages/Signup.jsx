@@ -101,7 +101,7 @@ function Signup() {
                 <div className="flex items-center justify-center lg:justify-start">
                   <img
                     src={Logo}
-                    alt="LexPort Logo"
+                    alt="Lexntra Logo"
                     className="h-12 sm:h-16 md:h-18 lg:h-20 w-auto object-contain rounded-sm"
                   />
                 </div>
@@ -111,7 +111,7 @@ function Signup() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 Welcome Back
                 <br />
-                to LexPort
+                to Lexntra
               </h2>
               {/* Re-added the "Securely access your legal dashboard" line with adjusted font size */}
               <p className="text-base sm:text-lg text-white leading-relaxed"> {/* Changed from text-sm/sm:text-base */}
