@@ -43,9 +43,9 @@ function Login() {
     const message = err.response?.data?.message;
     setIsLoading(false)
 
-    if (code === 401) {
+    if (code === "INVALID_PASSWORD") {
       setErrorMessage("Incorrect password.");
-    } else if (code === 404) {
+    } else if (code === "EMAIL_NOT_FOUND") {
       setErrorMessage("User not found.");
     } else {
       setErrorMessage(message || "An unexpected error occurred.");

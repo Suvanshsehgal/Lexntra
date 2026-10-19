@@ -13,12 +13,12 @@ const userSchema = new Schema({
         type:String,
         required:true,
         unique:true,
-        trim:true
+        trim:true,
+        lowercase:true
     },
     password:{
         type:String,
-        required:true,
-        trim:true
+        required:true
     },
     referencetoken:[{
         type:String,

@@ -5,17 +5,23 @@ import ApiResponse from "../utils/ApiResponse.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+// Case-insensitive collation so "Foo@mail.com" and "foo@mail.com" match,
+// including accounts saved before emails were normalized.
+const CASE_INSENSITIVE = { locale: "en", strength: 2 };
+
 const registeruser = asyncHandler(async (req, res) => {
-  const { Username, email, password } = req.body;
-  console.log("User registration details:", { Username, email, password });
+  const Username = req.body.Username?.trim();
+  const email = req.body.email?.trim().toLowerCase();
+  const { password } = req.body;
+  console.log("User registration attempt:", { Username, email });
 
   if (!Username || !email || !password) {
-    throw new ApiError(400, "Please provide all required fields");
+    throw new ApiError(400, "Please provide all required fields", [], "", "MISSING_FIELDS");
   }
 
   const existingUser = await User.findOne({
     $or: [{ email }, { Username }],
-  });
+  }).collation(CASE_INSENSITIVE);
 
   if (existingUser) {
     throw new ApiError(409, "User already exists", [], "", "USER_EXISTS");
@@ -49,7 +55,8 @@ const registeruser = asyncHandler(async (req, res) => {
 });
 
 const loginUser = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
+  const email = req.body.email?.trim().toLowerCase();
+  const { password } = req.body;
 
   if (!email || !password) {
     throw new ApiError(
@@ -61,7 +68,7 @@ const loginUser = asyncHandler(async (req, res) => {
     );
   }
 
-  const user = await User.findOne({ email });
+  const user = await User.findOne({ email }).collation(CASE_INSENSITIVE);
   if (!user) {
     throw new ApiError(404, "User not found", [], "", "EMAIL_NOT_FOUND");
   }
