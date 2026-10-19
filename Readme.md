@@ -100,22 +100,4 @@ npm run dev            # localhost:5173
 - **Backend** — Render Web Service: `npm install` (postinstall downloads Chrome) → `npm start`
 - **Frontend** — Vercel: root `frontend`, build `npm run build`, output `dist`
 
----
 
-## Roadmap
-
-- Redis caching for EJS templates and sessions
-- Bull + Redis queue for async PDF generation
-- Refresh token flow (httpOnly cookies)
-- Zod validation schemas
-- Pagination on document history
-- Rate limiting (auth, chatbot)
-- OAuth (Google, GitHub)
-- Docker Compose for one-command setup
-- CI pipeline with integration tests
-
----
-
-## License
-
-Portfolio project for demonstration purposes.
