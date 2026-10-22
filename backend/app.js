@@ -11,7 +11,7 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigins = ['https://lex-port.vercel.app', 'http://localhost:5173', 'http://localhost:5174'];
+const allowedOrigins = ['https://lex-port.vercel.app', 'https://lexntra.vercel.app', 'http://localhost:5173', 'http://localhost:5174'];
 
 app.use(cors({
   origin: allowedOrigins,
